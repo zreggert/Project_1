@@ -54,6 +54,7 @@ function getapis(movie) {
     getGifyApi();
 }
 
+// api call to get a gif related to the movie being searched
 function getGifyApi(movie) {
 
     var gifyurl = `https://api.giphy.com/v1/gifs/random?api_key=xK1kP8TEjhDs45YiVK94I0DCP8b8N4ds&tag=${movie}&rating=pg`
@@ -79,8 +80,11 @@ function getGifyApi(movie) {
 
 function getCast(idData) {
     for ( var i = 0; i < idData.cast.length; i++) {
-        var castMembers = idData.cast[i].actor;
+        var castMembers= idData.cast[i].actor;
+        //console.log(castMem);
+        var characters = idData.cast[i].character;
         console.log(castMembers);
+        console.log(characters);
     }
 }
 
