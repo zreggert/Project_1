@@ -4,7 +4,7 @@ data. = value of the promise (".then(function (data)")
 ("") - example
 
 
----First Array---
+---ID Array---
 -id 
     <data.titles[0].id> ("tt0091042")
 -image 
@@ -13,7 +13,7 @@ data. = value of the promise (".then(function (data)")
 -title (this would be good to check to give an error that what we typed in isnt in the DB(api))- error checking
     <data.titles[0].title> ("Ferris Bueller's Day Off")
 
----Sec Array---
+---Info Array---
 -Cast 5
     <data.cast[0].actor> ("Matthew Broderick");
     <data.cast[1].actor> ("Alan Ruck");
