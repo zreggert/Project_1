@@ -1,15 +1,17 @@
 var button = $('#button');
+var movie;
 
-function getapis() {
+function getapis(movie) {
     var input = $('#search').val();
     if (input === "") {
-        alert("put in shit");
+        alert("Please a movie title");
     }
-    console.log(input);
-    var movie = encodeURIComponent(input);
-    console.log(movie);
+    //console.log(input);
+    movie = encodeURIComponent(input);
+    //console.log(movie);
     var url = `https://imdb-internet-movie-database-unofficial.p.rapidapi.com/search/${movie}`
 
+    //call to get the poster, title, and movie id
     fetch(url, {
         "method": "GET",
         "headers": {
@@ -46,7 +48,11 @@ function getapis() {
         .catch(err => {
             console.error(err);
         });
-    
+    getGifyApi();
+}
+
+function getGifyApi(movie) {
+
     var gifyurl = `https://api.giphy.com/v1/gifs/random?api_key=xK1kP8TEjhDs45YiVK94I0DCP8b8N4ds&tag=${movie}&rating=pg`
         
     fetch(gifyurl)
@@ -57,4 +63,6 @@ function getapis() {
             console.log(gifydata);
         });
 }
+
+ 
 button.on('click', getapis);
