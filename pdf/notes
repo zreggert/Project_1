@@ -1,0 +1,87 @@
+KEY--
+data. = value of the promise (".then(function (data)")
+<> - array value
+("") - example
+
+
+---First Array---
+-id 
+    <data.titles[0].id> ("tt0091042")
+-image 
+    <data.titles[0].image> ("https://m.media-amazon.com/images/M/MV5BMDA0NjZhZWUtNmI2NC00MmFjLTgwZDYtYzVjZmNhMDVmOTBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg")
+
+-title (this would be good to check to give an error that what we typed in isnt in the DB(api))- error checking
+    <data.titles[0].title> ("Ferris Bueller's Day Off")
+
+---Sec Array---
+-Cast 5
+    <data.cast[0].actor> ("Matthew Broderick");
+    <data.cast[1].actor> ("Alan Ruck");
+    <data.cast[2].actor> ("Mia Sara");
+    <data.cast[3].actor> ("Jeffrey Jones");
+    <data.cast[4].actor> ("Jennifer Grey");
+
+    <data.cast[0].character> ("Ferris Bueller");
+    <data.cast[1].character> ("Cameron Frye");
+    <data.cast[2].character> ("Sloane Peterson");
+    <data.cast[3].character> ("Ed Rooney");
+    <data.cast[4].character> ("Jeanie Bueller");
+
+-length (might use this as another error check)
+    <data.length> ("1h 43min");
+
+-plot
+    <data.plot> ("A high school wise guy is determined to have a day off from school, despite what the Principal thinks of that.");
+
+-rating (can do something with stars maybe)
+    <data.rating> ("7.8");
+
+-rating votes
+    <data.rating_votes> ("299252");
+
+-trailer link - link to the trailer on imdb
+    <data.trailer.link> ("https://www.imdb.com/videoplayer/vi2005514777");
+
+-year move release
+    <data.year> ("1986");
+
+--Bonus/opitional
+-Technical specs of the movie
+    -Runtime
+        -0 <data.technical_specs[0].[0]> ("Runtime")
+        -1 <data.technical_specs[0].[1]> ("Dolby Digital | DTS (uncredited)")
+    -Sound Mix
+        -0 <data.technical_specs[1].[0]> ("Sound Mix")
+        -1 <data.technical_specs[1].[1]> ("Dolby Digital | DTS (uncredited)")
+    -Color
+        -0 <data.technical_specs[2].[0]> ("Color")
+        -1 <data.technical_specs[2].[1]> ("Color")
+    -Aspect Raito
+        -0 <data.technical_specs[3].[0]> ("Aspect Ratio")
+        -1 <data.technical_specs[3].[1]> ("2.35 : 1")
+    -Cemera
+        -0 <data.technical_specs[4].[0]> ("Camera")
+        -1 <data.technical_specs[4].[1]> ("Arricam LT, Zeiss Master Prime and Master Zoom Lenses <br> Arricam ST, Zeiss Master Prime and Master Zoom Lenses <br> Arriflex 435, Zeiss Master Prime and Master Zoom Lenses")
+    -Laboratory
+        -0 <data.technical_specs[5].[0]> ("Laboratory")
+        -1 <data.technical_specs[5].[1]> ("ARRI Film & TV (digital intermediate) <br> Arri Kopierwerk, Germany")
+    -Film length
+        -0 <data.technical_specs[6].[0]> ("Film Length")
+        -1 <data.technical_specs[6].[1]> ("2,982 m (Portugal, 35 mm)")
+    -Negative Format
+        -0 <data.technical_specs[7].[0]> ("Negative Format")
+        -1 <data.technical_specs[7].[1]> ("35 mm (Kodak)")
+    -Cinematographic Process
+        -0 <data.technical_specs[8].[0]> ("Cinematographic Process")
+        -1 <data.technical_specs[8].[1]> ("Digital Intermediate (2K) (master format) <br> Super 35 (3-perf) (source format)")
+    -Printed Film Format
+        -0 <data.technical_specs[9].[0]> ("Printed Film Format")
+        -1 <data.technical_specs[9].[1]> ("35 mm (anamorphic) (Fuji Eterna-CP 3513DI)")
+
+---GIFY CALLS---
+
+-embeded_url
+    <data.data.embed_url> ("https://giphy.com/embed/1pVzw6WFwCzu")
+
+
+
