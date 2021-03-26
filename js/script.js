@@ -26,7 +26,9 @@ function getapis(movie) {
             console.log(data);
             //Second API Call to IMDB
             var id = data.titles[0].id
-            console.log(id)
+            //console.log(id)
+            movieInfo(data);
+
 
             var url2 = `https://imdb-internet-movie-database-unofficial.p.rapidapi.com/film/${id}`
 
@@ -43,6 +45,7 @@ function getapis(movie) {
             .then(function (idData) {
                 //console logs Second Call to IMDB
                 console.log(idData);
+                getCast(idData);
             })
         })
         .catch(err => {
@@ -64,5 +67,21 @@ function getGifyApi(movie) {
         });
 }
 
- 
+ function movieInfo(data) {
+     var movieId = data.titles[0].id;
+     var movieTitle = data.titles[0].title;
+     var poster = data.titles[0].image;
+     console.log(movieId);
+     console.log(movieTitle);
+     console.log(poster);
+}
+
+
+function getCast(idData) {
+    for ( var i = 0; i < idData.cast.length; i++) {
+        var castMembers = idData.cast[i].actor;
+        console.log(castMembers);
+    }
+}
+
 button.on('click', getapis);
