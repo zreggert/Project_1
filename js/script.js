@@ -26,7 +26,7 @@ function getapis(movie) {
             console.log(data);
             //Second API Call to IMDB
             var id = data.titles[0].id
-            console.log(id)
+            //console.log(id)
             movieInfo(data);
 
 
