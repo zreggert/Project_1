@@ -169,7 +169,9 @@ image: "https://m.media-amazon.com/images/M/MV5BMTQ3MjM3ODU1NV5BMl5BanBnXkFtZTgw
 
 title: "They Live"
 ~~~~~~~~~~~~~~~~~
+
 --Mulan
+
 id: "tt4566758"
 
 image: https://m.media-amazon.com/images/M/MV5BNDliY2E1MjUtNzZkOS00MzJlLTgyOGEtZDg4MTI1NzZkMTBhXkEyXkFqcGdeQXVyNjMwMzc3MjE@.jpg
@@ -332,14 +334,59 @@ image: https://m.media-amazon.com/images/M/MV5BMjY1NjcxODQ4MV5BMl5BanBnXkFtZTcwM
 title: "Paranormal Activity"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+-- The BFG 
 
+id: "tt3691740"
 
+image: https://m.media-amazon.com/images/M/MV5BNjAzOTUzNTY3Ml5BMl5BanBnXkFtZTgwMjYwNzE5ODE@.jpg
 
+title: "The BFG"
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
+--Tangled
 
+id: "tt0398286"
 
+image: https://m.media-amazon.com/images/M/MV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM@.jpg
 
+title: "Tangled"
+~~~~~~~~~~~~~~~~~~~~~~~
 
+--Legend 
+
+id: "tt0089469"
+
+image: https://m.media-amazon.com/images/M/MV5BYTAxZmQ4YzktNTI3Yi00MjgzLTg0YzMtODdmMWVmODUzNjJmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@.jpg
+
+title: "Legend"
+
+~~~~~~~~~~~~~~~~~~
+
+--I Am Legend
+
+id: "tt0480249"
+
+image: https://m.media-amazon.com/images/M/MV5BYTE1ZTBlYzgtNmMyNS00ZTQ2LWE4NjEtZjUxNDJkNTg2MzlhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@.jpg
+
+title: "I Am Legend"
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--The Descent
+
+id: "tt0435625"
+
+image: https://m.media-amazon.com/images/M/MV5BMjA5NzQ1NTgwNV5BMl5BanBnXkFtZTcwNjUxMzUzMw@@.jpg
+
+title: "The Descent"
+~~~~~~~~~~~~~~~
+
+--Old Boy
+
+id: "tt0364569"
+
+image: https://m.media-amazon.com/images/M/MV5BMTI3NTQyMzU5M15BMl5BanBnXkFtZTcwMTM2MjgyMQ@@.jpg
+
+title: "Oldboy"
 
 
 
