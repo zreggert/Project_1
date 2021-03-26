@@ -45,6 +45,7 @@ function getapis(movie) {
             .then(function (idData) {
                 //console logs Second Call to IMDB
                 console.log(idData);
+                getCast(idData);
             })
         })
         .catch(err => {
@@ -73,6 +74,14 @@ function getGifyApi(movie) {
      console.log(movieId);
      console.log(movieTitle);
      console.log(poster);
+}
 
- }
+
+function getCast(idData) {
+    for ( var i = 0; i < idData.cast.length; i++) {
+        var castMembers = idData.cast[i].actor;
+        console.log(castMembers);
+    }
+}
+
 button.on('click', getapis);
