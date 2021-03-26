@@ -161,13 +161,13 @@ image: https://m.media-amazon.com/images/M/MV5BY2RlMDhlY2MtMjQ1Zi00NzI5LTgxOTgtZ
 title: "Planet of the Apes"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
---Holes
+--They Live
 
-id: "tt0311289"
 
-image: https://m.media-amazon.com/images/M/MV5BMTg0MTU5ODkwM15BMl5BanBnXkFtZTYwMzgxNzY3._V1_UX32_CR0,0,32,44_AL_.jpg
+id: "tt0096256"
+image: "https://m.media-amazon.com/images/M/MV5BMTQ3MjM3ODU1NV5BMl5BanBnXkFtZTgwMjU3NDU2MTE@.jpg"
 
-title: "Holes"
+title: "They Live"
 ~~~~~~~~~~~~~~~~~
 --Mulan
 id: "tt4566758"
@@ -185,6 +185,40 @@ image: https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZ
 
 title: "Spider-Man"
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--The Truman Show
+
+id: "tt0120382"
+
+image: https://m.media-amazon.com/images/M/MV5BMDIzODcyY2EtMmY2MC00ZWVlLTgwMzAtMjQwOWUyNmJjNTYyXkEyXkFqcGdeQXVyNDk3NzU2MTQ@.jpg
+
+title: "The Truman Show"
+
+~~~~~~~~~~~~~~~~~~~~~~
+
+--The Lost Boys
+
+id: "tt0093437"
+
+image: https://m.media-amazon.com/images/M/MV5BMWEzNmUxZTMtZjY0My00OGNmLWIyNDctODM2YzZjM2YwZWEwXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg
+
+title: "The Lost Boys"
+~~~~~~~~~~~~~~~~~~~~~~
+
+--The Lord Of The Rings: The Fellowship Of The Ring
+
+id: "tt0120737"
+
+image: https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@.jpg
+
+title: "The Lord of the Rings: The Fellowship of the Ring"
+
+
+
+
+
+
+
 
 
 
