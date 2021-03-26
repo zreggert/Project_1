@@ -1,0 +1,26 @@
+body {
+  background-color: #683548;
+}
+
+.content {
+  background-image: url("../images/movies/background.png");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* centers the background image horizontally and not vertical*/
+  background-position: center 0px;
+  min-height: 900px;
+  height: 100%;
+  width: 100%;
+  padding: 0% 0% 0% 0%;
+  margin: 0px;
+}
+
+.movie-grid {
+  display: grid;
+  /* short hand for 20 row auto width and 40 column hight */
+  grid: repeat(20, auto) / repeat(40, auto);
+  grid-gap: 0px;
+  width: 100%;
+  margin: 0px;
+}
