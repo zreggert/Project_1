@@ -41,7 +41,7 @@ body {
 
 /* drive-sign */
 .drive-in {
-  grid-area: 4 / 1;
+  grid-area: 4 / 2;
 }
 
 /* movie gif */
@@ -57,7 +57,7 @@ body {
 
 /* poster */
 .id-arr-image {
-  grid-area: 11 / 3;
+  grid-area: 11 / 5;
 }
 
 /* marguee text-box */
@@ -66,31 +66,257 @@ body {
   background-color: #ffffff;
   border: solid 2px #ffffff;
 }
+
 .marquee {
   height: 100%;
   border: solid 5px #000000;
-  padding: 2px;
+  padding: 10px;
 }
 
 /* API Text in Marguee*/
 
 .id-arr-title {
-  font-size: 40px;
+  font-size: 19px;
 }
 
 .info-plot {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .info-year-rating {
-  font-size: 20px;
+  font-size: 19px;
 }
 
 .info-cast {
-  font-size: 20px;
+  font-size: 19px;
+}
+
+.info-trailer-link {
+  font-size: 19px;
 }
 
 /* line breaking appart the text in the Marguee */
 .marquee-line {
   border: 2px solid #000000;
+}
+
+/* Medium devices (laptops, 1224px and 1823px) */
+@media only screen and (min-width: 1224px) {
+  .content {
+    background-image: url("../images/movies/background.png");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    /* centers the background image horizontally and not vertical*/
+    background-position: center 0px;
+    min-height: 900px;
+    width: 100%;
+    height: 100%;
+    padding: 0% 0% 0% 0%;
+    margin: 0px;
+  }
+
+  .movie-grid {
+    display: grid;
+    /* short hand for 20 row auto hight and 40 column width */
+    grid: repeat(18, 54px) / auto repeat(26, 48px) auto;
+    grid-gap: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+  }
+
+  /* content grid */
+  .movie-screen {
+    grid-area: 2 / 8;
+  }
+
+  /* wish list tickets */
+  .wish-list {
+    grid-area: 4 / 23;
+  }
+
+  /* drive-sign */
+  .drive-in {
+    grid-area: 4 / 3;
+    display: none;
+  }
+
+  /* movie gif */
+  .gify {
+    grid-area: 2 / 8 / span 7 / span 14;
+  }
+
+  .gify-embeded-url {
+    display: block;
+    height: 100%;
+    margin: 0px auto;
+  }
+
+  /* poster */
+  .id-arr-image {
+    grid-area: 3 / 3;
+  }
+
+  /* marguee text-box */
+  .marquee-container {
+    grid-area: 10 / 3 / span 7 / span 23;
+    border: solid 2px #ffffff;
+  }
+
+  .marquee {
+    height: 100%;
+    border: solid 5px #000000;
+    padding: 10px;
+  }
+
+  /* API Text in Marguee*/
+
+  .id-arr-title {
+    font-size: 19px;
+  }
+
+  .info-plot {
+    font-size: 19px;
+  }
+
+  .info-year-rating {
+    font-size: 19px;
+  }
+
+  .info-cast {
+    font-size: 19px;
+  }
+
+  .info-trailer-link {
+    font-size: 19px;
+  }
+
+  /* line breaking appart the text in the Marguee */
+  .marquee-line {
+    border: 2px solid #000000;
+  }
+}
+
+/* Laptops devices (Desktops, 1824px and up) */
+@media only screen and (min-width: 1824px) {
+  .content {
+    background-image: url("../images/movies/background.png");
+    /* background-position: center; */
+    background-repeat: repeat-x;
+    /* centers the background image horizontally and not vertical*/
+    background-position: center 0px;
+    min-height: 900px;
+    width: 100%;
+    height: 100%;
+    padding: 0% 0% 0% 0%;
+    margin: 0px;
+  }
+
+  .movie-grid {
+    display: grid;
+    /* short hand for 20 row auto hight and 40 column width */
+    grid: repeat(18, 54px) / repeat(35, 48px);
+    grid-gap: 0px;
+    width: 100%;
+    height: 1vh;
+    margin: 0px auto;
+  }
+
+  /* content grid */
+  .movie-screen {
+    grid-area: 2 / 14;
+  }
+
+  /* wish list tickets */
+  .wish-list {
+    grid-area: 11 / 34;
+  }
+
+  /* drive-sign */
+  .drive-in {
+    grid-area: 4 / 2;
+    width: auto;
+    display: block;
+  }
+
+  /* movie gif */
+  .gify {
+    grid-area: 2 / 14 / span 7 / span 14;
+  }
+
+  .gify-embeded-url {
+    display: block;
+    height: 100%;
+    margin: 0px auto;
+  }
+
+  /* poster */
+  .id-arr-image {
+    grid-area: 11 / 5;
+  }
+
+  /* marguee text-box */
+  .marquee-container {
+    grid-area: 11 / 10 / span 7 / span 23;
+    border: solid 2px #ffffff;
+  }
+
+  .marquee {
+    height: 100%;
+    border: solid 5px #000000;
+    padding: 10px;
+  }
+
+  /* API Text in Marguee*/
+
+  .id-arr-title {
+    font-size: 19px;
+  }
+
+  .info-plot {
+    font-size: 19px;
+  }
+
+  .info-year-rating {
+    font-size: 19px;
+  }
+
+  .info-cast {
+    font-size: 19px;
+  }
+
+  .info-trailer-link {
+    font-size: 19px;
+  }
+
+  /* line breaking appart the text in the Marguee */
+  .marquee-line {
+    border: 2px solid #000000;
+  }
+}
+
+/* Big devices (Desktops, 1920px and up) */
+@media only screen and (min-width: 1920px) {
+  .content {
+    background-image: url("../images/movies/background.png");
+    /* background-position: center; */
+    background-repeat: repeat-x;
+    /* centers the background image horizontally and not vertical*/
+    background-position: center 0px;
+    min-height: 900px;
+    max-height: 1080px;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    margin: 0px;
+  }
+
+  .movie-grid {
+    display: grid;
+    /* short hand for 20 row auto hight and 40 column width */
+    grid: repeat(20, 54px) / repeat(40, 48px);
+    grid-gap: 0px;
+    width: 1920px;
+    height: 1vh;
+    margin: 0px auto;
+  }
 }
