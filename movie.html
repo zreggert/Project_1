@@ -8,6 +8,8 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/movie.css" />
     <title>Document</title>
 </head>
@@ -19,32 +21,36 @@
             <img class="wish-list" id="wish-list" src="images/movies/wish-list.png" alt="Wish List">
             <img class="drive-in" id="drive-in" src="images/movies/drive-in.png" alt="Retro Drive-In movie sign">
             <!-- note these will need to be created with the DOM and populated gif.png and poster .png -->
-            <img class="gify-embeded-url" id="gify-embeded-url" src="images/movies/gif.png" alt="Funny PG Movie Gif">
+            <div class="gify" id="gify">
+                <img class="gify-embeded-url" id="gify-embeded-url" src="images/movies/gif.png" alt="Funny PG Movie Gif">
+            </div>
             <img class="id-arr-image" id="id-arr-image" src="images/movies/poster.png" alt="Movie Poster">
             <!-- note: this is going to need to be created and populated in the DOM With correct non-bummy info in it -->
-            <section class="marquee" id="marquee">
-                <h2 id="id-arr-title" class="id-arr-title">Farris Bueller’s Day off</h2>
-                <hr class="marquee-line">
-                <p id="info-plot" class="info-plot">A high school wise guy is determined to have a day off from school, despite what the Principal thinks of that.</p>
-                <hr class="marquee-line">
-                <p class="info-year-rating" id="info-year-rating">
-                    <span id="info-year" class="info-year">Release: 1986</span>
-                    <span id="info-rating" class="info-rating">Rating: 7.8</span>
-                    <span id="info-rating-votes" class="info-rating-votes">(299252)</span>
-                </p>
-                <hr class="marquee-line">
-                <p id="info-cast" class="info-cast">
-                    <span id="info-cast0-actor" class="info-cast0-actor">Matthew Broderick</span> as <span id="info-cast0-character" class="info-cast0-character">Ferris Bueller</span>
-                     | 
-                    <span id="info-cast1-actor" class="info-cast1-actor">Alan Ruckas</span> as <span id="info-cast1-character" class="info-cast1-character">Cameron Frye</span>
-                     | 
-                    <span id="info-cast2-actor" class="info-cast2-actor">Alan Ruckas</span> as <span id="info-cast2-character" class="info-cast2-character">Cameron Frye</span>
-                     | 
-                    <span id="info-cast3-actor" class="info-cast3-actor">Jeffrey Jones</span> as <span id="info-cast3-character" class="info-cast3-character">Ed Rooney
-                    </span>
-                </p>
-                <hr class="marquee-line">
-                <p id="info-trailer-link" class="info-trailer-link"></p>
+            <section class="marquee-container">
+                <div class="marquee" id="marquee">
+                    <h2 class="id-arr-title" id="id-arr-title">Farris Bueller’s Day off</h2>
+                    <hr class="marquee-line">
+                    <p id="info-plot" class="info-plot">A high school wise guy is determined to have a day off from school, despite what the Principal thinks of that.</p>
+                    <hr class="marquee-line">
+                    <p class="info-year-rating" id="info-year-rating">
+                        <span class="info-year" id="info-year" >Release: 1986</span>
+                        <span class="info-rating" id="info-rating" >Rating: 7.8</span>
+                        <span  class="info-rating-votes" id="info-rating-votes">(299252)</span>
+                    </p>
+                    <hr class="marquee-line">
+                    <p class="info-cast" id="info-cast" >
+                        <span class="info-cast0-actor" id="info-cast0-actor" >Matthew Broderick</span> as <span class="info-cast0-character" id="info-cast0-character" >Ferris Bueller</span>
+                        | 
+                        <span class="info-cast1-actor" id="info-cast1-actor">Alan Ruckas</span> as <span class="info-cast1-character" id="info-cast1-character">Cameron Frye</span>
+                        | 
+                        <span class="info-cast2-actor" id="info-cast2-actor">Alan Ruckas</span> as <span class="info-cast2-character" id="info-cast2-character">Cameron Frye</span>
+                        | 
+                        <span class="info-cast3-actor" id="info-cast3-actor">Jeffrey Jones</span> as <span class="info-cast3-character" id="info-cast3-character">Ed Rooney
+                        </span>
+                    </p>
+                    <hr class="marquee-line">
+                    <p id="info-trailer-link" class="info-trailer-link">https://www.imdb.com/videoplayer/vi2005514777</p>
+                </div>
             </section>
         </div>
     </section>
