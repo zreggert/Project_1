@@ -46,6 +46,7 @@ function getapis(movie) {
                 //console logs Second Call to IMDB
                 console.log(idData);
                 getCast(idData);
+                getMovieSpecs(idData);
             })
         })
         .catch(err => {
@@ -72,9 +73,9 @@ function getGifyApi(movie) {
      var movieId = data.titles[0].id;
      var movieTitle = data.titles[0].title;
      var poster = data.titles[0].image;
-     console.log(movieId);
-     console.log(movieTitle);
-     console.log(poster);
+//      console.log(movieId);
+//      console.log(movieTitle);
+//      console.log(poster);
 }
 
 
@@ -83,9 +84,24 @@ function getCast(idData) {
         var castMembers= idData.cast[i].actor;
         //console.log(castMem);
         var characters = idData.cast[i].character;
-        console.log(castMembers);
-        console.log(characters);
+        // console.log(castMembers);
+        // console.log(characters);
     }
+}
+
+function getMovieSpecs(idData) {
+    var plot = idData.plot;
+    console.log(plot);
+    var length = idData.length;
+    console.log(length);
+    var rating = idData.rating;
+    console.log(rating);
+    var ratingVotes = idData.rating_votes;
+    console.log(ratingVotes);
+    var trailerLink = idData.trailer.link;
+    console.log(trailerLink);
+    var year = idData.year;
+    console.log(year);
 }
 
 button.on('click', getapis);

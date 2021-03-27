@@ -1,0 +1,451 @@
+KEY--
+data. = value of the promise (".then(function (data)")
+<> - array value
+("") - example
+
+
+---First Array---
+-id 
+    <data.titles[0].id> ("tt0091042")
+-image 
+    <data.titles[0].image> ("https://m.media-amazon.com/images/M/MV5BMDA0NjZhZWUtNmI2NC00MmFjLTgwZDYtYzVjZmNhMDVmOTBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg")
+
+-title (this would be good to check to give an error that what we typed in isnt in the DB(api))- error checking
+    <data.titles[0].title> ("Ferris Bueller's Day Off")
+
+---Sec Array---
+-Cast 5
+    <data.cast[0].actor> ("Matthew Broderick");
+    <data.cast[1].actor> ("Alan Ruck");
+    <data.cast[2].actor> ("Mia Sara");
+    <data.cast[3].actor> ("Jeffrey Jones");
+    <data.cast[4].actor> ("Jennifer Grey");
+
+    <data.cast[0].character> ("Ferris Bueller");
+    <data.cast[1].character> ("Cameron Frye");
+    <data.cast[2].character> ("Sloane Peterson");
+    <data.cast[3].character> ("Ed Rooney");
+    <data.cast[4].character> ("Jeanie Bueller");
+
+-length (might use this as another error check)
+    <data.length> ("1h 43min");
+
+-plot
+    <data.plot> ("A high school wise guy is determined to have a day off from school, despite what the Principal thinks of that.");
+
+-rating (can do something with stars maybe)
+    <data.rating> ("7.8");
+
+-rating votes
+    <data.rating_votes> ("299252");
+
+-trailer link - link to the trailer on imdb
+    <data.trailer.link> ("https://www.imdb.com/videoplayer/vi2005514777");
+
+-year move release
+    <data.year> ("1986");
+
+--Bonus/opitional
+-Technical specs of the movie
+    -Runtime
+        -0 <data.technical_specs[0].[0]> ("Runtime")
+        -1 <data.technical_specs[0].[1]> ("Dolby Digital | DTS (uncredited)")
+    -Sound Mix
+        -0 <data.technical_specs[1].[0]> ("Sound Mix")
+        -1 <data.technical_specs[1].[1]> ("Dolby Digital | DTS (uncredited)")
+    -Color
+        -0 <data.technical_specs[2].[0]> ("Color")
+        -1 <data.technical_specs[2].[1]> ("Color")
+    -Aspect Raito
+        -0 <data.technical_specs[3].[0]> ("Aspect Ratio")
+        -1 <data.technical_specs[3].[1]> ("2.35 : 1")
+    -Cemera
+        -0 <data.technical_specs[4].[0]> ("Camera")
+        -1 <data.technical_specs[4].[1]> ("Arricam LT, Zeiss Master Prime and Master Zoom Lenses <br> Arricam ST, Zeiss Master Prime and Master Zoom Lenses <br> Arriflex 435, Zeiss Master Prime and Master Zoom Lenses")
+    -Laboratory
+        -0 <data.technical_specs[5].[0]> ("Laboratory")
+        -1 <data.technical_specs[5].[1]> ("ARRI Film & TV (digital intermediate) <br> Arri Kopierwerk, Germany")
+    -Film length
+        -0 <data.technical_specs[6].[0]> ("Film Length")
+        -1 <data.technical_specs[6].[1]> ("2,982 m (Portugal, 35 mm)")
+    -Negative Format
+        -0 <data.technical_specs[7].[0]> ("Negative Format")
+        -1 <data.technical_specs[7].[1]> ("35 mm (Kodak)")
+    -Cinematographic Process
+        -0 <data.technical_specs[8].[0]> ("Cinematographic Process")
+        -1 <data.technical_specs[8].[1]> ("Digital Intermediate (2K) (master format) <br> Super 35 (3-perf) (source format)")
+    -Printed Film Format
+        -0 <data.technical_specs[9].[0]> ("Printed Film Format")
+        -1 <data.technical_specs[9].[1]> ("35 mm (anamorphic) (Fuji Eterna-CP 3513DI)")
+
+---GIFY CALLS---
+
+-embeded_url
+    <data.data.embed_url> ("https://giphy.com/embed/1pVzw6WFwCzu")
+
+---Image links---
+
+~~~~~~~~~~~
+
+--Star Wars IV: A New Hope 
+
+id: "tt0076759"
+
+image: https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@.jpg
+
+title: "Star Wars: Episode IV - A New Hope"
+
+~~~~~~~~~~~
+
+--Jurassic Park
+
+id: "tt0107290"
+
+image: https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@.jpg
+
+title: "Jurassic Park"
+
+~~~~~~~~~~~~~~~~
+
+--The Fountain
+
+id: "tt0414993"
+
+image: https://m.media-amazon.com/images/M/MV5BMTU5OTczMTcxMV5BMl5BanBnXkFtZTcwNDg3MTEzMw@@.jpg
+
+title: "The Fountain"
+~~~~~~~~~~~~~~~~~~
+
+--Ghostbusters
+
+id: "tt0087332"
+
+image: https://m.media-amazon.com/images/M/MV5BMTkxMjYyNzgwMl5BMl5BanBnXkFtZTgwMTE3MjYyMTE@.jpg
+
+title: "Ghostbusters"
+~~~~~~~~~~~~~~~~~~~~~~
+
+--The Incredibles
+
+id: "tt0317705"
+
+image: https://m.media-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@.jpg
+
+title: "The Incredibles"
+~~~~~~~~~~~~~~~~~~~~~
+
+--Silence Of The Lambs
+
+id: "tt0102926"
+
+image: https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@.jpg
+
+title: "The Silence of the Lambs"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--My Friend Totoro
+
+id: "tt0096283"
+
+image: https://m.media-amazon.com/images/M/MV5BYzJjMTYyMjQtZDI0My00ZjE2LTkyNGYtOTllNGQxNDMyZjE0XkEyXkFqcGdeQXVyMTMxODk2OTU@.jpg
+
+title: "My Neighbor Totoro"
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--Planet Of The Apes
+
+id: "tt0133152"
+
+image: https://m.media-amazon.com/images/M/MV5BY2RlMDhlY2MtMjQ1Zi00NzI5LTgxOTgtZjliNWMzYTY3NWZkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg
+
+title: "Planet of the Apes"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--They Live
+
+
+id: "tt0096256"
+image: "https://m.media-amazon.com/images/M/MV5BMTQ3MjM3ODU1NV5BMl5BanBnXkFtZTgwMjU3NDU2MTE@.jpg"
+
+title: "They Live"
+~~~~~~~~~~~~~~~~~
+
+--Mulan
+
+id: "tt4566758"
+
+image: https://m.media-amazon.com/images/M/MV5BNDliY2E1MjUtNzZkOS00MzJlLTgyOGEtZDg4MTI1NzZkMTBhXkEyXkFqcGdeQXVyNjMwMzc3MjE@.jpg
+
+title: "Mulan"
+~~~~~~~~~~~~~~~~~~~~
+
+--Spider-Man 
+
+id: "tt0145487"
+
+image: https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@.jpg
+
+title: "Spider-Man"
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--The Truman Show
+
+id: "tt0120382"
+
+image: https://m.media-amazon.com/images/M/MV5BMDIzODcyY2EtMmY2MC00ZWVlLTgwMzAtMjQwOWUyNmJjNTYyXkEyXkFqcGdeQXVyNDk3NzU2MTQ@.jpg
+
+title: "The Truman Show"
+
+~~~~~~~~~~~~~~~~~~~~~~
+
+--The Lost Boys
+
+id: "tt0093437"
+
+image: https://m.media-amazon.com/images/M/MV5BMWEzNmUxZTMtZjY0My00OGNmLWIyNDctODM2YzZjM2YwZWEwXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg
+
+title: "The Lost Boys"
+~~~~~~~~~~~~~~~~~~~~~~
+
+--The Lord Of The Rings: The Fellowship Of The Ring
+
+id: "tt0120737"
+
+image: https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@.jpg
+
+title: "The Lord of the Rings: The Fellowship of the Ring"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--Pretty Woman
+
+id: "tt0100405"
+
+image: https://m.media-amazon.com/images/M/MV5BNjk2ODQzNDYxNV5BMl5BanBnXkFtZTgwMTcyNDg4NjE@.jpg
+
+title: "Pretty Woman"
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+--Memoirs Of A Geisha
+
+id: "tt0397535"
+
+image: https://m.media-amazon.com/images/M/MV5BMTYxMzM4NTEzOV5BMl5BanBnXkFtZTcwNDMwNjQzMw@@.jpg
+
+title: "Memoirs of a Geisha"
+~~~~~~~~~~~~~~~~~~~~
+
+--Forrest Gump
+
+id: "tt0109830"
+
+image: https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg
+
+title: "Forrest Gump"
+~~~~~~~~~~~~~~~~~~
+
+--Beauty And The Beast
+
+id: "tt2771200"
+
+image: https://m.media-amazon.com/images/M/MV5BMTUwNjUxMTM4NV5BMl5BanBnXkFtZTgwODExMDQzMTI@.jpg
+
+title: "Beauty and the Beast"
+~~~~~~~~~~~~~~~~~
+
+--Lost In Translation
+
+id: "tt0335266"
+
+image: https://m.media-amazon.com/images/M/MV5BMTUxMzk0NDg1MV5BMl5BanBnXkFtZTgwNDg0NjkxMDI@.jpg
+
+title: "Lost in Translation"
+~~~~~~~~~~~~~~~~~
+
+--Natural Born Killers
+
+id: "tt0110632"
+
+image: https://m.media-amazon.com/images/M/MV5BMTI2NTU2Nzc0MV5BMl5BanBnXkFtZTcwMzY1OTM2MQ@@.jpg
+
+title: "Natural Born Killers"
+~~~~~~~~~~~~~~~~~~~~~
+
+--Boondock Saints
+
+id: "tt0144117"
+
+image: https://m.media-amazon.com/images/M/MV5BYzVmMTdjOTYtOTJkYS00ZTg2LWExNTgtNzA1N2Y0MDgwYWFhXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg
+
+title: "The Boondock Saints"
+~~~~~~~~~~~~~~~~~~~~
+
+--Five Feet Apart
+
+id: "tt6472976"
+
+image: https://m.media-amazon.com/images/M/MV5BNzVmMjJlN2MtNWQ4Ny00Zjc2LWJjYTgtYjJiNGM5MTM1ZTlkXkEyXkFqcGdeQXVyMjM4NTM5NDY@.jpg
+
+title: "Five Feet Apart"
+~~~~~~~~~~~~~~~~
+
+--Zootopia
+
+id: "tt2948356"
+
+image: https://m.media-amazon.com/images/M/MV5BOTMyMjEyNzIzMV5BMl5BanBnXkFtZTgwNzIyNjU0NzE@.jpg
+
+title: "Zootopia"
+
+~~~~~~~~~~~~~~~~~~
+
+--The Secret Of NIHM
+
+id: "tt0084649"
+
+image: https://m.media-amazon.com/images/M/MV5BNDJlM2E1M2QtNTVmNi00MzNhLTlmZTgtMGM0YjYzYzhjM2JmXkEyXkFqcGdeQXVyNTkxMzEwMzU@.jpg
+
+title: "The Secret of NIMH"
+
+~~~~~~~~~~~~~~~~~
+
+--Thumbelina
+
+id: "tt0111419"
+
+image: https://m.media-amazon.com/images/M/MV5BNmE3MjdmMGMtOThhMS00OGRhLTllNDItMmJmN2QxMjA4ZTI2XkEyXkFqcGdeQXVyNTUyMzE4Mzg@.jpg
+
+title: "Thumbelina"
+~~~~~~~~~~~~~~~~~~~
+
+--X:Men Origins: Wolverine
+
+id: "tt0458525"
+
+image: https://m.media-amazon.com/images/M/MV5BZWRhMzdhMzEtZTViNy00YWYyLTgxZmUtMTMwMWM0NTEyMjk3XkEyXkFqcGdeQXVyNTIzOTk5ODM@.jpg
+
+title: "X-Men Origins: Wolverine"
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--Paranormal Activity
+
+id: "tt1179904"
+
+image: https://m.media-amazon.com/images/M/MV5BMjY1NjcxODQ4MV5BMl5BanBnXkFtZTcwMzUxNjM4Mg@@.jpg
+
+title: "Paranormal Activity"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-- The BFG 
+
+id: "tt3691740"
+
+image: https://m.media-amazon.com/images/M/MV5BNjAzOTUzNTY3Ml5BMl5BanBnXkFtZTgwMjYwNzE5ODE@.jpg
+
+title: "The BFG"
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--Tangled
+
+id: "tt0398286"
+
+image: https://m.media-amazon.com/images/M/MV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM@.jpg
+
+title: "Tangled"
+~~~~~~~~~~~~~~~~~~~~~~~
+
+--Legend 
+
+id: "tt0089469"
+
+image: https://m.media-amazon.com/images/M/MV5BYTAxZmQ4YzktNTI3Yi00MjgzLTg0YzMtODdmMWVmODUzNjJmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@.jpg
+
+title: "Legend"
+
+~~~~~~~~~~~~~~~~~~
+
+--I Am Legend
+
+id: "tt0480249"
+
+image: https://m.media-amazon.com/images/M/MV5BYTE1ZTBlYzgtNmMyNS00ZTQ2LWE4NjEtZjUxNDJkNTg2MzlhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@.jpg
+
+title: "I Am Legend"
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--The Descent
+
+id: "tt0435625"
+
+image: https://m.media-amazon.com/images/M/MV5BMjA5NzQ1NTgwNV5BMl5BanBnXkFtZTcwNjUxMzUzMw@@.jpg
+
+title: "The Descent"
+~~~~~~~~~~~~~~~
+
+--Old Boy
+
+id: "tt0364569"
+
+image: https://m.media-amazon.com/images/M/MV5BMTI3NTQyMzU5M15BMl5BanBnXkFtZTcwMTM2MjgyMQ@@.jpg
+
+title: "Oldboy"
+~~~~~~~~~~~~~~~~~
+
+--Sucker Punch
+
+id: "tt0978764"
+
+image: https://m.media-amazon.com/images/M/MV5BNDEwNGRlNjQtZjI4OC00ZmMxLWEyYmQtNGI1NDk4YmUyYTNkXkEyXkFqcGdeQXVyNjQ2MjQ5NzM@.jpg
+
+title: "Sucker Punch"
+~~~~~~~~~~~~~~~~~~~~~~~
+
+--The Pursuit Of Happyness
+
+id: "tt0454921"
+
+image: https://m.media-amazon.com/images/M/MV5BMTQ5NjQ0NDI3NF5BMl5BanBnXkFtZTcwNDI0MjEzMw@@.jpg
+
+title: "The Pursuit of Happyness"
+~~~~~~~~~~~~~~~~~~~~~
+
+--The Princess Diaries
+
+id: "tt0247638"
+
+image: https://m.media-amazon.com/images/M/MV5BMzcwYjEwMzEtZTZmMi00ZGFhLWJhZjItMDAzNDVkNjZmM2U5L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg
+
+title: "The Princess Diaries"
+~~~~~~~~~~~~~~~~~
+
+--Black Swan
+
+id: "tt0947798"
+
+image: https://m.media-amazon.com/images/M/MV5BNzY2NzI4OTE5MF5BMl5BanBnXkFtZTcwMjMyNDY4Mw@@.jpg
+
+title: "Black Swan"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--Jaws 
+
+id: "tt0073195"
+
+image: https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@.jpg
+
+title: "Jaws"
+~~~~~~~~~~~~~~~~~~~
+
+--Mean Girls
+id: "tt0377092"
+
+image: https://m.media-amazon.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@.jpg
+
+title: "Mean Girls"
+~~~~~~~~~~~~~~~~~~~
+
+--The Karate Kid
+
+id: "tt0087538"
+
+image: https://m.media-amazon.com/images/M/MV5BNTkzY2YzNmYtY2ViMS00MThiLWFlYTEtOWQ1OTBiOGEwMTdhXkEyXkFqcGdeQXVyMTQxNzMzNDI@.jpg
+
+title: "The Karate Kid"
