@@ -272,7 +272,7 @@ body {
   /* poster */
   .id-arr-image {
     grid-area: 3 / 3;
-    width: auto;
+    width: 400%;
   }
 
   /* marguee text-box */
