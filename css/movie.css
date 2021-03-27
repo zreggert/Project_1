@@ -60,6 +60,7 @@ body {
 .id-arr-image {
   grid-area: 23 / 3;
   width: 500%;
+  display: none;
 }
 
 /* marguee text-box */
