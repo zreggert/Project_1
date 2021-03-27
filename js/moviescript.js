@@ -54,7 +54,7 @@ $(document).ready(function(){
         .catch(err => {
             console.error(err);
         });
-        getGifyApi();
+        getGifyApi(movie);
     }
 
 // api call to get a gif related to the movie being searched
@@ -68,7 +68,14 @@ $(document).ready(function(){
         })
         .then(function (gifydata) {
             console.log(gifydata);
+            getGif(gifydata);
         });
+    }
+
+    function getGif(gifydata) {
+        var gif = gifydata.data.fixed_height_downsampled_url
+        console.log(gif);
+        $('#gify-embeded-url').attr("src", gif);
     }
 
     function movieInfo(data) {
