@@ -12,8 +12,7 @@ body {
   background-repeat: repeat-x;
   /* centers the background image horizontally and not vertical*/
   background-position: center 0px;
-  min-height: 900px;
-  max-height: 1080px;
+  min-height: 600px;
   width: 100%;
   padding: 0% 0% 0% 0%;
   margin: 0px;
@@ -22,31 +21,33 @@ body {
 .movie-grid {
   display: grid;
   /* short hand for 20 row auto hight and 40 column width */
-  grid: repeat(20, 54px) / repeat(40, 48px);
+  grid: repeat(33, 54px) / auto repeat(7, 48px);
   grid-gap: 0px;
-  width: 1920px;
-  height: 1vh;
+  width: 100%;
+  height: 100%;
   margin: 0px auto;
 }
 
 /* content grid */
 .movie-screen {
-  grid-area: 2 / 14;
+  grid-area: 6 / 2;
+  width: 700%;
 }
 
 /* wish list tickets */
 .wish-list {
-  grid-area: 11 / 34;
+  grid-area: 30 / 3;
 }
 
 /* drive-sign */
 .drive-in {
-  grid-area: 4 / 2;
+  grid-area: 4 / 1;
+  display: none;
 }
 
 /* movie gif */
 .gify {
-  grid-area: 2 / 14 / span 7 / span 14;
+  grid-area: 6 / 2 / span 4 / span 7;
 }
 
 .gify-embeded-url {
@@ -57,12 +58,13 @@ body {
 
 /* poster */
 .id-arr-image {
-  grid-area: 11 / 5;
+  grid-area: 23 / 3;
+  width: 500%;
 }
 
 /* marguee text-box */
 .marquee-container {
-  grid-area: 11 / 10 / span 7 / span 23;
+  grid-area: 11 / 2 / span 11 / span 7;
   background-color: #ffffff;
   border: solid 2px #ffffff;
 }
@@ -76,7 +78,7 @@ body {
 /* API Text in Marguee*/
 
 .id-arr-title {
-  font-size: 19px;
+  font-size: 30px;
 }
 
 .info-plot {
@@ -92,12 +94,126 @@ body {
 }
 
 .info-trailer-link {
+  display: none;
   font-size: 19px;
 }
 
 /* line breaking appart the text in the Marguee */
 .marquee-line {
   border: 2px solid #000000;
+}
+
+/* Medium devices (Small Mobile phones, 400px to 599px) */
+@media only screen and (min-width: 400px) {
+  .movie-grid {
+    display: grid;
+    /* short hand for 20 row auto hight and 40 column width */
+    grid: repeat(33, 54px) / auto repeat(9, 48px) auto;
+    grid-gap: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+  }
+
+  /* content grid */
+  .movie-screen {
+    grid-area: 6 / 3;
+    width: 700%;
+  }
+
+  /* wish list tickets */
+  .wish-list {
+    grid-area: 30 / 4;
+  }
+
+  /* drive-sign */
+  .drive-in {
+    grid-area: 4 / 2;
+    display: none;
+  }
+
+  /* movie gif */
+  .gify {
+    grid-area: 6 / 3 / span 4 / span 7;
+  }
+
+  .gify-embeded-url {
+    display: block;
+    height: 100%;
+    margin: 0px auto;
+  }
+
+  /* poster */
+  .id-arr-image {
+    grid-area: 23 / 4;
+    width: 500%;
+  }
+
+  /* marguee text-box */
+  .marquee-container {
+    grid-area: 11 / 3 / span 11 / span 7;
+    background-color: #ffffff;
+    border: solid 2px #ffffff;
+  }
+}
+
+/* Medium devices (Ipad, 768px and 1023px) */
+@media only screen and (min-width: 768px) {
+  .movie-grid {
+    display: grid;
+    /* short hand for 20 row auto hight and 40 column width */
+    grid: repeat(30, 54px) / auto repeat(13, 48px) auto;
+    grid-gap: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+  }
+
+  /* content grid */
+  .movie-screen {
+    grid-area: 5 / 3;
+    width: 1100%;
+  }
+
+  /* wish list tickets */
+  .wish-list {
+    grid-area: 24 / 10;
+  }
+
+  /* drive-sign */
+  .drive-in {
+    grid-area: 4 / 2;
+    display: none;
+  }
+
+  /* movie gif */
+  .gify {
+    grid-area: 5 / 3 / span 5 / span 11;
+  }
+
+  .gify-embeded-url {
+    display: block;
+    height: 100%;
+    margin: 0px auto;
+  }
+
+  /* poster */
+  .id-arr-image {
+    grid-area: 22 / 3;
+    width: 500%;
+  }
+
+  /* marguee text-box */
+  .marquee-container {
+    grid-area: 13 / 3 / span 8 / span 11;
+    background-color: #ffffff;
+    border: solid 2px #ffffff;
+  }
+
+  .info-trailer-link {
+    display: block;
+    font-size: 16px;
+  }
 }
 
 /* Medium devices (laptops, 1224px and 1823px) */
@@ -128,6 +244,7 @@ body {
   /* content grid */
   .movie-screen {
     grid-area: 2 / 8;
+    width: auto;
   }
 
   /* wish list tickets */
@@ -155,6 +272,7 @@ body {
   /* poster */
   .id-arr-image {
     grid-area: 3 / 3;
+    width: auto;
   }
 
   /* marguee text-box */
@@ -172,7 +290,7 @@ body {
   /* API Text in Marguee*/
 
   .id-arr-title {
-    font-size: 19px;
+    font-size: 25px;
   }
 
   .info-plot {
@@ -261,37 +379,12 @@ body {
     border: solid 2px #ffffff;
   }
 
-  .marquee {
-    height: 100%;
-    border: solid 5px #000000;
-    padding: 10px;
-  }
-
-  /* API Text in Marguee*/
-
   .id-arr-title {
-    font-size: 19px;
-  }
-
-  .info-plot {
-    font-size: 19px;
-  }
-
-  .info-year-rating {
-    font-size: 19px;
-  }
-
-  .info-cast {
-    font-size: 19px;
+    font-size: 30px;
   }
 
   .info-trailer-link {
-    font-size: 19px;
-  }
-
-  /* line breaking appart the text in the Marguee */
-  .marquee-line {
-    border: 2px solid #000000;
+    font-size: 17px;
   }
 }
 
