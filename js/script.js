@@ -85,3 +85,5 @@ function getCast(idData) {
 }
 
 button.on('click', getapis);
+
+console.log("fixed");
