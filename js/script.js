@@ -92,6 +92,16 @@ function getCast(idData) {
 function getMovieSpecs(idData) {
     var plot = idData.plot;
     console.log(plot);
+    var length = idData.length;
+    console.log(length);
+    var rating = idData.rating;
+    console.log(rating);
+    var ratingVotes = idData.rating_votes;
+    console.log(ratingVotes);
+    var trailerLink = idData.trailer.link;
+    console.log(trailerLink);
+    var year = idData.year;
+    console.log(year);
 }
 
 button.on('click', getapis);
