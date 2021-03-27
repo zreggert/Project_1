@@ -85,13 +85,23 @@ $(document).ready(function(){
 
 
     function getCast(idData) {
-        for ( var i = 0; i < idData.cast.length; i++) {
-            var castMembers= idData.cast[i].actor;
-            //console.log(castMem);
-            var characters = idData.cast[i].character;
-            // console.log(castMembers);
-            // console.log(characters);
-        }   
+        var castMembers= [];
+        var characters = [];
+        for ( var i = 0; i < 5; i++) {
+            castMembers.push(idData.cast[i].actor);
+            characters.push(idData.cast[i].character);
+            console.log(characters);
+            if (i < 4) {
+                $("#info-cast").append(`${castMembers[i]} as ${characters[i]} | `);
+            } else {
+                $("#info-cast").append(`${castMembers[i]} as ${characters[i]} `);
+            }
+            // for (var j = 0; j < 5; j++) {
+            //     $("#info-cast").append(`${castMembers[j]} as ${characters[j]} `);
+            // }  
+        }
+        
+        console.log(castMembers);   
     }   
 
     function getMovieSpecs(idData) {
