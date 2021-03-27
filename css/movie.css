@@ -7,7 +7,7 @@ body {
 }
 
 .content {
-  background-image: url("../images/movies/background.png");
+  background-image: url("#");
   /* background-position: center; */
   background-repeat: repeat-x;
   /* centers the background image horizontally and not vertical*/
@@ -21,7 +21,12 @@ body {
 .movie-grid {
   display: grid;
   /* short hand for 20 row auto hight and 40 column width */
-  grid: repeat(33, 54px) / auto repeat(7, 48px);
+  grid:
+    auto auto auto auto repeat(16, 54px) auto repeat(13, 54px) / auto repeat(
+      9,
+      48px
+    )
+    auto;
   grid-gap: 0px;
   width: 100%;
   height: 100%;
@@ -36,7 +41,13 @@ body {
 
 /* wish list tickets */
 .wish-list {
-  grid-area: 30 / 3;
+  grid-area: 31 / 3;
+  transition: transform 1.5s;
+}
+
+.wish-list:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  transform: scale(1.2);
 }
 
 /* drive-sign */
@@ -53,6 +64,7 @@ body {
 .gify-embeded-url {
   display: block;
   height: 100%;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -106,10 +118,22 @@ body {
 
 /* Medium devices (Small Mobile phones, 400px to 599px) */
 @media only screen and (min-width: 400px) {
+  .content {
+    background-image: url("../images/movies/background.png");
+    /* background-position: center; */
+    background-repeat: repeat-x;
+    /* centers the background image horizontally and not vertical*/
+    background-position: center 0px;
+    min-height: 600px;
+    width: 100%;
+    padding: 0% 0% 0% 0%;
+    margin: 0px;
+  }
+
   .movie-grid {
     display: grid;
     /* short hand for 20 row auto hight and 40 column width */
-    grid: repeat(33, 54px) / auto repeat(9, 48px) auto;
+    grid: repeat(20, 54px) auto repeat(13, 54px) / auto repeat(9, 48px) auto;
     grid-gap: 0px;
     width: 100%;
     height: 100%;
@@ -124,7 +148,7 @@ body {
 
   /* wish list tickets */
   .wish-list {
-    grid-area: 30 / 4;
+    grid-area: 31 / 4;
   }
 
   /* drive-sign */
@@ -135,12 +159,13 @@ body {
 
   /* movie gif */
   .gify {
-    grid-area: 6 / 3 / span 4 / span 7;
+    grid-area: 6 / 2 / span 4 / span 9;
   }
 
   .gify-embeded-url {
     display: block;
     height: 100%;
+    width: auto;
     margin: 0px auto;
   }
 
@@ -162,8 +187,8 @@ body {
 @media only screen and (min-width: 768px) {
   .movie-grid {
     display: grid;
-    /* short hand for 20 row auto hight and 40 column width */
-    grid: repeat(30, 54px) / auto repeat(13, 48px) auto;
+    /* 19 rows at 54 then a flex for all the text from API then 9 rows of 54 again */
+    grid: repeat(19, 54px) auto repeat(9, 54px) / auto repeat(13, 48px) auto;
     grid-gap: 0px;
     width: 100%;
     height: 100%;
@@ -189,7 +214,7 @@ body {
 
   /* movie gif */
   .gify {
-    grid-area: 5 / 3 / span 5 / span 11;
+    grid-area: 5 / 2 / span 5 / span 13;
   }
 
   .gify-embeded-url {
@@ -261,7 +286,7 @@ body {
 
   /* movie gif */
   .gify {
-    grid-area: 2 / 8 / span 7 / span 14;
+    grid-area: 2 / 6 / span 7 / span 18;
   }
 
   .gify-embeded-url {
@@ -273,12 +298,12 @@ body {
   /* poster */
   .id-arr-image {
     grid-area: 3 / 3;
-    width: auto;
+    width: 400%;
   }
 
   /* marguee text-box */
   .marquee-container {
-    grid-area: 10 / 3 / span 7 / span 23;
+    grid-area: 10 / 3 / span 8 / span 23;
     border: solid 2px #ffffff;
   }
 
@@ -334,7 +359,7 @@ body {
   .movie-grid {
     display: grid;
     /* short hand for 20 row auto hight and 40 column width */
-    grid: repeat(18, 54px) / repeat(35, 48px);
+    grid: repeat(13, 54px) auto repeat(1, 54px) / repeat(38, 48px);
     grid-gap: 0px;
     width: 100%;
     height: 1vh;
@@ -360,7 +385,7 @@ body {
 
   /* movie gif */
   .gify {
-    grid-area: 2 / 14 / span 7 / span 14;
+    grid-area: 2 / 7 / span 7 / span 28;
   }
 
   .gify-embeded-url {
@@ -376,7 +401,7 @@ body {
 
   /* marguee text-box */
   .marquee-container {
-    grid-area: 11 / 10 / span 7 / span 23;
+    grid-area: 10 / 10 / span 5 / span 23;
     border: solid 2px #ffffff;
   }
 
@@ -407,9 +432,9 @@ body {
   .movie-grid {
     display: grid;
     /* short hand for 20 row auto hight and 40 column width */
-    grid: repeat(20, 54px) / repeat(40, 48px);
+    grid: repeat(13, 54px) auto repeat(1, 54px) / auto repeat(38, 48px) auto;
     grid-gap: 0px;
-    width: 1920px;
+    width: 100%;
     height: 1vh;
     margin: 0px auto;
   }
