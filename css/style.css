@@ -1,5 +1,22 @@
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
 #button img {
-  width: 10px;
+  width: 50px;
+}
+
+#button {
+  border: none;
+  transition: transform 1.5s;
+}
+
+#button:hover {
+  background-color: #00000000;
+  -ms-transform: rotate(-90deg) scale(1.5); /* IE 9 */
+  transform: rotate(-90deg) scale(1.5);
 }
 
 .content {
@@ -12,4 +29,67 @@
   max-height: 1080px;
   width: 100vw;
   height: 100vh;
+}
+
+/* changing the text color of the input placeholder text */
+#search::placeholder {
+  color: #949494;
+  opacity: 1; /* Firefox */
+}
+
+#search:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #949494;
+}
+
+#search::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #949494;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  text-align: right;
+  padding: 0px 20px 10px 0px;
+}
+
+.footer {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.imdb {
+  width: 50px;
+}
+
+#search {
+  background-color: #000000;
+  border: #000000;
+  color: #ffffff;
+  font-weight: 500;
+  border-radius: 7px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 1080px;
+  width: 600px;
+  animation-name: grow;
+  animation-duration: 3s;
+  margin: auto;
+}
+
+@keyframes grow {
+  0% {
+    width: 100px;
+  }
+  100% {
+    width: 600px;
+  }
 }
