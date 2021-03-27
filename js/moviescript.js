@@ -80,7 +80,7 @@ $(document).ready(function(){
         console.log(poster);
 
         $('.id-arr-title').text(movieTitle);
-        $('.id-arr-img').attr('src', poster);
+        $('#id-arr-image').attr('src', poster);
     }
 
 
@@ -102,12 +102,13 @@ $(document).ready(function(){
         console.log(rating);
         $("#info-rating").append(rating)
         var ratingVotes = idData.rating_votes;
-        console.log(ratingVotes);
-        $("#info-rating-votes").append(ratingVotes);
+        console.log(`(${ratingVotes})`);
+        $("#info-rating-votes").append(`(${ratingVotes})`);
         var trailerLink = idData.trailer.link;
         console.log(trailerLink);
-        $("#info-trailer-link").prepend(`<a>${trailerLink}</a>`)
+        $("#info-trailer-link").prepend(`<a href="${trailerLink}">${trailerLink}</a>`)
         var year = idData.year;
         console.log(year);  
+        $('#info-year').append(year);
     }
 })
