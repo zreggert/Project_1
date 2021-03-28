@@ -13,7 +13,7 @@ $(document).ready(function(){
         //console.log(movie);
         var url = `https://imdb-internet-movie-database-unofficial.p.rapidapi.com/search/${movie}`
 
-        //call to get the poster, title, and movie id
+       //call to get the poster, title, and movie id
         fetch(url, {
         "method": "GET",
         "headers": {
@@ -31,7 +31,7 @@ $(document).ready(function(){
             //console.log(id)
             movieInfo(data);
 
-
+            
             var url2 = `https://imdb-internet-movie-database-unofficial.p.rapidapi.com/film/${id}`
 
             fetch(url2, {
@@ -129,3 +129,24 @@ $(document).ready(function(){
         $('#info-year').append(year);
     }
 })
+
+// creates an array named wishlist
+let wishListArr = [];
+
+function wishList () {
+    //pulls searched-movie from localstorage and make it var names favMovie
+    let favMovie =  JSON.parse(localStorage.getItem("searched-movie"));
+    //pulls saved wishList movies from localStorage
+    let wishListArr =  JSON.parse(localStorage.getItem("wishList"));
+
+    //checks if favmovie is already in the the array
+    if (wishListArr.includes(favMovie)) {
+        alert("This movie is already in your Wishlist");
+    } else {
+        //pushes searched-movie name from local storage into wishList array
+        wishListArr.push(favMovie);
+        //save into local storage
+        localStorage.setItem("wishList", JSON.stringify(wishListArr));
+    }  
+}
+$(".wish-list").on('click', wishList); 
