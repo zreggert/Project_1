@@ -10,6 +10,7 @@
 
 #button {
   border: none;
+  cursor: pointer;
   transition: transform 1.5s;
 }
 
@@ -79,7 +80,7 @@ footer {
   height: 100vh;
   min-height: 600px;
   max-height: 1080px;
-  width: 600px;
+  width: 340px;
   animation-name: grow;
   animation-duration: 3s;
   margin: auto;
@@ -90,6 +91,153 @@ footer {
     width: 100px;
   }
   100% {
+    width: 340px;
+  }
+}
+
+.wish-list-area {
+  position: absolute;
+  height: 100vh;
+  width: 375px;
+  z-index: 1;
+}
+
+.wl-area {
+  float: left;
+  height: 100%;
+  width: 250px;
+  background-color: #dd1e01de;
+  animation-duration: 3s;
+  animation-name: grow2;
+}
+
+.wish-list-tab {
+  float: left;
+  width: 100px;
+  margin: 20% 0px 0px 0px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.ul-wl {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-family: "Roboto Mono", monospace;
+  list-style-type: none;
+  padding: 40px 0px;
+  font-weight: 500;
+}
+
+.li-title {
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.li-wl {
+  margin: 5px 0px;
+  cursor: pointer;
+}
+
+@keyframes grow2 {
+  0% {
+    width: 10px;
+  }
+  100% {
+    width: 250px;
+  }
+}
+
+/* Medium devices (Small Mobile phones, 400px to 599px) */
+@media only screen and (min-width: 400px) {
+  /* search bar */
+  .center {
+    width: 360px;
+  }
+
+  /* search bar growth */
+  @keyframes grow {
+    0% {
+      width: 100px;
+    }
+    100% {
+      width: 360px;
+    }
+  }
+
+  /* wish list container */
+  .wish-list-area {
+    width: 380px;
+  }
+
+  /* wish list red text area */
+  .wl-area {
+    width: 280px;
+  }
+
+  /* wish list tab */
+  .wish-list-tab {
+    width: 70px;
+  }
+
+  /* wish list growth */
+  @keyframes grow2 {
+    0% {
+      width: 50px;
+    }
+    100% {
+      width: 280px;
+    }
+  }
+}
+
+/* Medium devices (Small Mobile phones, 600px to +) */
+@media only screen and (min-width: 600px) {
+  /* search bar */
+  .center {
     width: 600px;
+  }
+
+  /* search bar growth */
+  @keyframes grow {
+    0% {
+      width: 100px;
+    }
+    100% {
+      width: 600px;
+    }
+  }
+
+  /* wish list container */
+  .wish-list-area {
+    width: 600px;
+  }
+
+  /* wish list red text area */
+  .wl-area {
+    width: 450px;
+  }
+
+  /* wish list tab */
+  .wish-list-tab {
+    width: 100px;
+  }
+
+  /* wish list growth */
+  @keyframes grow2 {
+    0% {
+      width: 100px;
+    }
+    100% {
+      width: 450px;
+    }
   }
 }

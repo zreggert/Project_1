@@ -43,6 +43,7 @@ body {
 .wish-list {
   grid-area: 31 / 3;
   transition: transform 1.5s;
+  cursor: pointer;
 }
 
 .wish-list:hover {
