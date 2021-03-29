@@ -5,9 +5,10 @@ $(document).ready(function(){
 
     function getapis(movie) {
         var input = JSON.parse(localStorage.getItem("searched-movie"));
-        if (input === "") {
-            alert("Please a movie title");
-    }
+        //if you go to the page and your input is blank it will send back to the index
+        if (input == "" || input == null ) {
+            window.history.back();
+        }
         //console.log(input);
         movie = encodeURIComponent(input);
         //console.log(movie);
@@ -136,17 +137,26 @@ let wishListArr = [];
 function wishList () {
     //pulls searched-movie from localstorage and make it var names favMovie
     let favMovie =  JSON.parse(localStorage.getItem("searched-movie"));
-    //pulls saved wishList movies from localStorage
-    let wishListArr =  JSON.parse(localStorage.getItem("wishList"));
-
-    //checks if favmovie is already in the the array
-    if (wishListArr.includes(favMovie)) {
-        alert("This movie is already in your Wishlist");
+    
+    if (wishListArr.length === 0 || wishListArr === undefined){
+            //pushes searched-movie name from local storage into wishList array
+            wishListArr.push(favMovie);
+            //save into local storage
+            localStorage.setItem("wishList", JSON.stringify(wishListArr));
     } else {
-        //pushes searched-movie name from local storage into wishList array
-        wishListArr.push(favMovie);
-        //save into local storage
-        localStorage.setItem("wishList", JSON.stringify(wishListArr));
+        let wLArr =  JSON.parse(localStorage.getItem("wishList"));
+        //checks if favmovie is already in the the array
+        if (wLArr.includes(favMovie)) {
+            alert("This movie is already in your Wishlist");
+        } else {
+            //pulls saved wishList movies from localStorage
+            let wishListArr =  JSON.parse(localStorage.getItem("wishList"));
+            //pushes searched-movie name from local storage into wishList array
+            wishListArr.push(favMovie);
+            //save into local storage
+            localStorage.setItem("wishList", JSON.stringify(wishListArr));
+            window.history.back();
+        }
     }  
 }
 $(".wish-list").on('click', wishList); 
