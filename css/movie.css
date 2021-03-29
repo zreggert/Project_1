@@ -36,7 +36,14 @@ body {
 
 /* wish list tickets */
 .wish-list {
-  grid-area: 30 / 3;
+  grid-area: 31 / 3;
+  transition: transform 1.5s;
+  cursor: pointer;
+}
+
+.wish-list:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  transform: scale(1.2);
 }
 
 /* drive-sign */
@@ -60,7 +67,6 @@ body {
 .id-arr-image {
   grid-area: 23 / 3;
   width: 500%;
-  display: nonegit ;
 }
 
 /* marguee text-box */
