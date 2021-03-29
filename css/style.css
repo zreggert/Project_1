@@ -95,26 +95,19 @@ footer {
   }
 }
 
-.wish-list-area {
-  position: absolute;
-  height: 100vh;
-  width: 375px;
-  z-index: 1;
-}
-
 .wl-area {
   float: left;
   height: 100%;
   width: 250px;
   background-color: #dd1e01de;
   animation-duration: 3s;
-  animation-name: grow2;
 }
 
 .wish-list-tab {
   float: left;
   width: 100px;
-  margin: 20% 0px 0px 0px;
+  margin: 215px 0px 0px 0px;
+  cursor: pointer;
 }
 
 .hide {
@@ -147,6 +140,23 @@ footer {
   cursor: pointer;
 }
 
+.grow {
+  animation-name: grow2;
+}
+
+.shrink {
+  animation-name: shrink2;
+}
+
+@keyframes shrink2 {
+  0% {
+    width: 250px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
 @keyframes grow2 {
   0% {
     width: 10px;
@@ -173,11 +183,6 @@ footer {
     }
   }
 
-  /* wish list container */
-  .wish-list-area {
-    width: 380px;
-  }
-
   /* wish list red text area */
   .wl-area {
     width: 280px;
@@ -189,6 +194,15 @@ footer {
   }
 
   /* wish list growth */
+  @keyframes shrink2 {
+    0% {
+      width: 280px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+
   @keyframes grow2 {
     0% {
       width: 50px;
@@ -216,11 +230,6 @@ footer {
     }
   }
 
-  /* wish list container */
-  .wish-list-area {
-    width: 600px;
-  }
-
   /* wish list red text area */
   .wl-area {
     width: 450px;
@@ -232,9 +241,18 @@ footer {
   }
 
   /* wish list growth */
+  @keyframes shrink2 {
+    0% {
+      width: 450px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+
   @keyframes grow2 {
     0% {
-      width: 100px;
+      width: 0px;
     }
     100% {
       width: 450px;
