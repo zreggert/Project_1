@@ -138,25 +138,17 @@ function wishList () {
     //pulls searched-movie from localstorage and make it var names favMovie
     let favMovie =  JSON.parse(localStorage.getItem("searched-movie"));
     
-    if (wishListArr.length === 0 || wishListArr === undefined){
-            //pushes searched-movie name from local storage into wishList array
-            wishListArr.push(favMovie);
-            //save into local storage
-            localStorage.setItem("wishList", JSON.stringify(wishListArr));
+    //pulls saved wishList movies from localStorage
+    wishListArr = JSON.parse(localStorage.getItem("wishList")) || [];
+    
+    if (wishListArr.includes(favMovie)) {
+        alert("This movie is already in your Wishlist");
     } else {
-        let wLArr =  JSON.parse(localStorage.getItem("wishList"));
-        //checks if favmovie is already in the the array
-        if (wLArr.includes(favMovie)) {
-            alert("This movie is already in your Wishlist");
-        } else {
-            //pulls saved wishList movies from localStorage
-            let wishListArr =  JSON.parse(localStorage.getItem("wishList"));
-            //pushes searched-movie name from local storage into wishList array
-            wishListArr.push(favMovie);
-            //save into local storage
-            localStorage.setItem("wishList", JSON.stringify(wishListArr));
-            window.history.back();
-        }
-    }  
+        //pushes searched-movie name from local storage into wishList array
+        wishListArr.push(favMovie);
+        //save into local storage
+        localStorage.setItem("wishList", JSON.stringify(wishListArr));
+        window.history.back();
+    }
 }
 $(".wish-list").on('click', wishList); 

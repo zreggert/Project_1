@@ -15,19 +15,15 @@ button.on('click', function(event) {
 $(document).ready(function() {
     function wishLists() {
         let wishListArr = [];
+        
+        //pulls saved wishList movies from localStorage
+        wishListArr =  JSON.parse(localStorage.getItem("wishList")) || [];
 
-        if (wishListArr.length === 0 || wishListArr === undefined){
-        }
-        else {
-            //pulls saved wishList movies from localStorage
-            wishListArr =  JSON.parse(localStorage.getItem("wishList"));
-
-            for (let i = 0; i < wishListArr.length; i++) {
-                let favMovieTitle = wishListArr[i];
-                console.log(favMovieTitle)
-                let liList = $(".ul-wl")
-                liList.append(`<li class="li-wl" id="li-wl">${favMovieTitle}</li>`);
-            }
+        for (let i = 0; i < wishListArr.length; i++) {
+            let favMovieTitle = wishListArr[i];
+            console.log(favMovieTitle)
+            let liList = $(".ul-wl")
+            liList.append(`<li class="li-wl" id="li-wl">${favMovieTitle}</li>`);
         }
     }
     //invokes local storage function
@@ -37,7 +33,6 @@ $(document).ready(function() {
 function expand() {
     let wishText = $('#ul-wl');
     let wishClass = $('#wl-area')
-    let wisharea = $('#wish-list-area')
     if (wishClass.hasClass('hide')) {
         wishClass.removeClass('shrink')
         wishClass.addClass('grow')
