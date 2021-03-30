@@ -23,7 +23,7 @@ $(document).ready(function() {
             let favMovieTitle = wishListArr[i];
             console.log(favMovieTitle)
             let liList = $(".ul-wl")
-            liList.append(`<li class="li-wl" id="li-wl">${favMovieTitle}</li>`);
+            liList.append(`<li class="li-wl li-list" id="li-wl-${[i]}" data-list="#li-wl-${[i]}">${favMovieTitle}</li>`);
         }
     }
     //invokes local storage function
@@ -50,3 +50,21 @@ function expand() {
     }
 }
 $(".wish-list-tab").on('click', expand);
+
+$(document).ready(function () {
+    function wishlistclick() {
+        var moviesLiListArr = $('.li-list').toArray();
+        moviesLiListArr.forEach(element => {
+            var moviesListData = $(element).attr('data-list');
+            console.log(moviesListData);
+            var moviesListContent = $(moviesListData).text();
+            console.log(moviesListContent);
+            $(moviesListData).on('click', function () {
+                localStorage.setItem("searched-movie", JSON.stringify(moviesListContent));
+                $('.input-group').submit();
+            });
+        });
+    }
+    wishlistclick()
+});
+
