@@ -32,21 +32,31 @@ $(document).ready(function() {
 
 function expand() {
     let wishText = $('#ul-wl');
-    let wishClass = $('#wl-area')
+    let wishClass = $('#wl-area');
+    let searchclass = $('.center');
+    let wishlistwidth = $('#wish-list-tab')
     if (wishClass.hasClass('hide')) {
-        wishClass.removeClass('shrink')
-        wishClass.addClass('grow')
-        wishClass.removeClass('hide')
-        wishClass.addClass('show')
+        wishlistwidth.removeClass('wish-list-tab-width-max');
+        wishlistwidth.addClass('wish-list-tab-width-min');
+        wishClass.removeClass('shrink');
+        wishClass.addClass('grow');
+        wishClass.removeClass('hide');
+        wishClass.addClass('show');
         setTimeout(function(){wishText.addClass('show')}, 800);
-        setTimeout(function(){wishText.removeClass('hide')}, 800);
+        setTimeout(function () { wishText.removeClass('hide') }, 800);
+        searchclass.removeClass('showFlex');
+        searchclass.addClass('hide2')
     } else {
-        wishClass.removeClass('grow')
-        wishClass.addClass('shrink')
+        wishlistwidth.addClass('wish-list-tab-width-max');
+        wishlistwidth.removeClass('wish-list-tab-width-min');
+        wishClass.removeClass('grow');
+        wishClass.addClass('shrink');
         setTimeout(function(){wishClass.addClass('hide')}, 3000);
         wishClass.removeClass('show')
         setTimeout(function(){wishText.addClass('hide')}, 800);
-        wishText.removeClass('show') 
+        wishText.removeClass('show');
+        searchclass.removeClass('hide2');
+        searchclass.addClass('showFlex');
     }
 }
 $(".wish-list-tab").on('click', expand);
