@@ -116,6 +116,33 @@ body {
   border: 2px solid #000000;
 }
 
+/* modal */
+.modalWidth {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.border-R-T {
+  border-radius: 12px 12px 0px 0px;
+}
+
+.border-R-BB {
+  border-radius: 0px 12px 0px 0px;
+}
+
+.border-R-B {
+  border-radius: 0px 0px 12px 12px;
+}
+
+.modelText {
+  padding: 7px 0px 0px 0px;
+}
+
+.purple {
+  background-color: #683548;
+  color: #ffffff;
+}
+
 /* Medium devices (Small Mobile phones, 400px to 599px) */
 @media only screen and (min-width: 400px) {
   .content {
@@ -239,6 +266,11 @@ body {
   .info-trailer-link {
     display: block;
     font-size: 16px;
+  }
+
+  /* modal */
+  .modalWidth {
+    width: 600px;
   }
 }
 

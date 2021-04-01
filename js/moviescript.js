@@ -131,7 +131,7 @@ function wishList () {
     
     // Alerts user if Wishlist(wishListArr) already has the localstorage value(favMovie) by searching the array with the includes function
     if (wishListArr.includes(favMovie)) {
-        alert("This movie is already in your Wishlist");
+        document.getElementById('id01').style.display = 'block';
     } else {
         // pushes searched-movie name from local storage into wishList array
         wishListArr.push(favMovie);
