@@ -5,15 +5,15 @@
 getMovieInfo() {} is an application that allows users to easily search the IMDB and find important information about the searched movie such a actors, release year, and ratings. It uses a IMDB api for the movie information and the giphy api to generate random gifs specific to the movie to add to the user's experience.
 
 
-[Zachary Eggert] | Slack name: [Zachary Eggert] | Github : [zreggert]
+[Zachary Eggert] | Slack name: [Zachary Eggert] | Github : [zreggert] | email: zreggert@gmail.com
 
-[Sarah Martin] | Slack name: [Sarah Martin] | Github : [smartin7337]
+[Sarah Martin] | Slack name: [Sarah Martin] | Github : [smartin7337] | email: sv7337@outlook.com
 
-[Scott Erwin] | Slack name: [Scott Erwin] | Github : [Limnation]
+[Scott Erwin] | Slack name: [Scott Erwin] | Github : [Limnation] | email: scottallenerwin@gmail.com
 
-[Willie Libet] | Slack name: [Willie] | Github : [willielibet]
+[Willie Libet] | Slack name: [Willie] | Github : [willielibet] 
 
-[Winsor Sineus] | Slack name: [Winsor Sineus] | Github : [sineusw]
+[Winsor Sineus] | Slack name: [Winsor Sineus] | Github : [sineusw] | email: sineusw@gmail.com
 
 ![getMovieInfo landing page](./images/homepage/getmovieinfo.png)
 
